@@ -1,0 +1,35 @@
+<!--pages/main/main.wxml-->
+<view class="content">
+  <image src="/image/bianhu.png" mode="widthFix" class="in-image" ></image>
+</view>
+
+<!-- 文本输入框和按键 -->
+<view class="content">
+  <view class="imagesize">
+    <input class="input" bindblur="touched" value="要不要上课" />
+  </view>
+  <view>
+    <image class="button" src="/image/button1.png" mode="widthFix" bindtap="create"></image>
+  </view>
+</view>
+
+<!-- 单选框：选择生成的版本 -->
+<view class="content">
+  <radio-group class="radio-group" bindchange="radioChange">
+    <radio class="radio" wx:for-items="{{items}}" wx:key="name" value="{{item.name}}" checked="{{item.checked}}">
+      <text>{{item.value}}</text>
+    </radio>
+  </radio-group>
+</view>
+<!--显示效果框 -->
+
+
+<text>
+{{laststring}}
+</text>
+<!-- 一键复制生成的文本 -->
+<view class="content" wx:if="{{couldview==true}}">
+<button size="mini" type="primary" bindtap="copyText" data-text="{{laststring}}">一键复制</button>
+</view>
+<view class="scribe" wx:if="{{couldview==true}}"><text>PS：本项目生成的文章只做于娱乐, 请不要用于正规用途</text></view>
+

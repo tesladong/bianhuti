@@ -1,0 +1,46 @@
+/* pages/main/main.wxss */
+
+.imagesize {
+  margin: 20rpx;
+  display: flex;
+}
+
+.imagesize image {
+  width: 700rpx;
+  height: 700rpx;
+}
+
+.input {
+  border: 1rpx solid rgba(128, 128, 128, 0.521);
+  margin: 10rpx 0rpx;
+  width: 399rpx;
+  height: 50rpx;
+}
+
+.button {
+  width: 150rpx;
+  display: flex;
+  margin: 27rpx 0rpx;
+}
+
+/* 水平排列的父容器 */
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.in-image {
+  width: 500rpx;
+  display: flex;
+  margin: 27rpx 0rpx;
+  justify-content: center;
+}
+
+.scribe{
+  font-size: 12px;
+  color: gray;
+  justify-content: center;
+  display: flex;
+}

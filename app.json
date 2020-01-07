@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/main/main"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#66b2ff",
+    "navigationBarTitleText": "编乎体生成器",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
